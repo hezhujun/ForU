@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.king.foru.view.fragment.ForhelpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/toolbar_title"
+                android:layout_height="wrap_content"
+                android:text="发布求助"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/forhelp_linearlayout_title">
+
+        <TextView
+            style="@style/forhelp_textview"
+            android:text="标题"
+            android:id="@+id/forhelp_title_textview" />
+
+        <EditText
+            style="@style/forhelp_textedit"
+            android:inputType="text|textPhonetic"
+            android:text="我需要做什么"
+            android:ems="10"
+            android:id="@+id/forhelp_title_textedit" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/forhelp_line1"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/forhelp_linearlayout_description">
+
+    <TextView
+        android:text="描述"
+        style="@style/forhelp_textview"
+        android:id="@+id/forhelp_description_textview"/>
+
+    <EditText
+        style="@style/forhelp_textedit"
+        android:inputType="text|textPhonetic|textImeMultiLine|textMultiLine"
+        android:text="说说具体任务的信息"
+        android:ems="10"
+        android:id="@+id/forhelp_description_textedit"
+        />
+</LinearLayout>
+
+
+    <View
+        android:id="@+id/forhelp_line2"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/forhelp_linearlayout_price">
+
+        <TextView
+            android:text="赏金"
+            style="@style/forhelp_textview"
+            android:id="@+id/forhelp_price_textview"/>
+
+        <EditText
+            style="@style/forhelp_textedit"
+            android:inputType="numberDecimal"
+            android:text="支付多少报酬给帮助者"
+            android:ems="10"
+            android:id="@+id/forhelp_price_textedit"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/forhelp_line3"
+        android:layout_height="15px"
+        android:layout_width="match_parent"
+        android:background="#eeeeee"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/forhelp_linearlayout_adress">
+
+        <TextView
+            android:text="所处位置"
+            style="@style/forhelp_textview"
+            android:id="@+id/forhelp_adress_textview"/>
+
+        <EditText
+            style="@style/forhelp_textedit"
+            android:inputType="text"
+            android:text="所在位置由地图标出"
+            android:ems="10"
+            android:id="@+id/forhelp_adress_textedit"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/forhelp_linearlayout_foradress">
+
+        <TextView
+            android:text="目的位置"
+            style="@style/forhelp_textview"
+            android:id="@+id/forhelp_foradress_textview"/>
+
+        <EditText
+            style="@style/forhelp_textedit"
+            android:inputType="text"
+            android:text="所在位置由地图标出"
+            android:ems="10"
+            android:id="@+id/forhelp_foradress_textedit"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/forhelp_line4"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:id="@+id/forhelp_linearlayout_usefuldate">
+
+        <TextView
+            android:text="有效日期"
+            style="@style/forhelp_textview"
+            android:id="@+id/forhelp_usefuldate_textview" />
+
+        <EditText
+            style="@style/forhelp_textedit"
+            android:inputType="date"
+            android:text="为任务设置有效日期"
+            android:ems="10"
+            android:id="@+id/editText8" />
+    </LinearLayout>
+
+    <Button
+        android:text="发布"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forhelp_addnewtask"
+        android:background="?attr/colorPrimary"
+        android:textColor="@color/white"
+
+        />
+</LinearLayout>

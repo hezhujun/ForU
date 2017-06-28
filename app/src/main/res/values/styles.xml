@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="AppThemeSame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeSame.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--主界面的布局-->
+    <!--main_linearlayout(vertical)-->
+    <style name="main_linearlayout_vertival">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--main_linearlayout_imageview-->
+    <style name="main_linearlayout_imageview">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">#0000</item>
+        <item name="android:clickable">false</item>
+
+    </style>
+
+    <!--main_linearlayout_textview-->
+    <style name="main_linearlayout_textview">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <!--发布新任务的界面-->
+    <!--forhelp_textview-->
+    <style name="forhelp_textview">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!--forhelp_textedit-->
+    <style name="forhelp_textedit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+</resources>
