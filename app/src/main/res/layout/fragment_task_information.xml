@@ -28,7 +28,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:id="@+id/我帮助的(0)"
+                    android:id="@+id/task_information_help"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -39,7 +39,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/我求助的(0)"
+                    android:id="@+id/task_information_foehelp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
